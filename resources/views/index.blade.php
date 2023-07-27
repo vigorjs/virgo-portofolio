@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>{{$title}} | Virgo's Portofolio - </title>
+  <title>{{$title}} | Virgo's Portofolio</title>
 
   <meta content="" name="description">
   <meta content="" name="keywords">
