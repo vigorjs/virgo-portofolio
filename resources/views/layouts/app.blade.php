@@ -41,5 +41,6 @@
 
         {{-- script --}}
         @include('includes.indexscript')
+        @stack('after-script')
     </body>
 </html>

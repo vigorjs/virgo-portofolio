@@ -14,6 +14,7 @@ class SectionProfile extends Model
         'phone',
         'email',
         'address',
+        'image',
         'description',
     ];
 }

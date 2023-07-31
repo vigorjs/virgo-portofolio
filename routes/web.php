@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\EditSection\AboutmeController;
-use App\Http\Controllers\EditSection\HeroController;
+use App\Http\Controllers\Admin\EditSectionController;
 use App\Http\Controllers\ProfileController;
+use App\Models\SectionProfile;
+use App\Models\Social;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,10 +18,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    $socials = Social::all();
+    $sectionprofiles = SectionProfile::all();
     return view('index', [
         'title' => 'Home',
+        'socials' => $socials,
+        'sectionprofiles' => $sectionprofiles,
     ]);
-});
+})->name('index');
 
 
 // profile routes
@@ -30,24 +35,19 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-// admin routes
-Route::middleware('auth', 'verified')->name('admin.')->prefix('admin')->group(function(){
+Route::middleware('auth')->name('admin.')->prefix('admin')->group(function(){
     Route::get('/dashboard', function () { return view('admin.dashboard');})->name('dashboard');
-    Route::get('/edit-section', function () { return view('admin.edit-section');})->name('edit-section');
+
+    Route::name('edit-section.')->prefix('edit-section')->group(function(){
+        Route::get('aboutme', [EditSectionController::class, 'aboutme'])->name('aboutme');
+        Route::patch('updateaboutme/{id}', [EditSectionController::class, 'updateaboutme'])->name('aboutme.update');
+    });
+
+    // Exclude 'edit-section' route from Route::resource()
+    Route::resource('edit-section', EditSectionController::class)->except(['show']);
 });
 
-// edit section routes
-Route::middleware('auth', 'verified')->name('admin.edit-section.')->prefix('admin/edit-section')->group(function(){
-    Route::resource('hero', HeroController::class, [
-        'names' => [
-            'index' => 'hero.index'
-        ]
-    ]);
-    Route::resource('aboutme', AboutmeController::class, [
-        'names' => [
-            'index' => 'aboutme.index'
-        ]
-    ]);
-});
+
+
 
 require __DIR__.'/auth.php';

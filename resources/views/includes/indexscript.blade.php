@@ -8,6 +8,7 @@
   <script src="{{asset('template/assets/vendor/typed.js/typed.umd.js')}}"></script>
   <script src="{{asset('template/assets/vendor/waypoints/noframework.waypoints.js')}}"></script>
   <script src="{{asset('template/assets/vendor/php-email-form/validate.js')}}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
   <!-- Template Main JS File -->
   <script src="{{asset('template/assets/js/main.js')}}"></script>
