@@ -15,8 +15,10 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         $this->call([
-            add_to_Section_Profile_tables::class,
             add_to_Socials_tables::class,
+            add_to_Skills_tables::class,
+            add_to_Portofolios_tables::class,
+            add_to_Section_Profile_tables::class,
         ]);
         // \App\Models\User::factory(10)->create();
 

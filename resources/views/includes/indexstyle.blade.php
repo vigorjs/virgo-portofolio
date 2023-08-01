@@ -8,3 +8,5 @@
 
   <!-- Template Main CSS File -->
   <link href="{{asset('template/assets/css/style.css')}}" rel="stylesheet">
+  <link href="{{asset('template/assets/css/custom.css')}}" rel="stylesheet">
+

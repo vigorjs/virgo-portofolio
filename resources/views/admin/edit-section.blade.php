@@ -4,9 +4,7 @@
         <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight"><a href="{{route('admin.edit-section.index')}}">
             {{ __('Edit Section') }}
         </a></h2>
-        <x-nav-link :href="route('admin.edit-section.aboutme')" :active="request()->routeIs('admin.edit-section.aboutme')">
-            {{ __('About Me') }}
-        </x-nav-link>
+        @include('components.navedit')
         </div>
     </x-slot>
 

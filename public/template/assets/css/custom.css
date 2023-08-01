@@ -1,0 +1,38 @@
+.zoom-image {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .zoom-image:hover {
+    transform: scale(2.5); /* Adjust the scale value as desired */
+  }
+
+/* Custom styles for login and register container */
+.login-register-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+  }
+
+  /* Adjust the links' styles as needed */
+  .login-register-container a {
+    color: #666;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  /* Optional: Style for hover effect */
+  .login-register-container a:hover {
+    color: #333;
+  }
+
+  /* Media query for responsive behavior */
+  @media screen and (max-width: 990px) {
+    .login-register-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+  }

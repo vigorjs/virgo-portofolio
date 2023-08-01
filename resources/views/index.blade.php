@@ -24,6 +24,7 @@
 
   @stack('after-styles')
 
+
   <!-- =======================================================
   * Template Name: MyResume
   * Updated: Jun 13 2023 with Bootstrap v5.3.0

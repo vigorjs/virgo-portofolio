@@ -9,95 +9,29 @@
 
           <div class="row skills-content">
             <div class="col-lg-6">
+            @foreach ($column1skills as $skill)
 
-              <div class="progress">
-                <span class="skill">Laravel <i class="val">85%</i></span>
+            <div class="progress">
+                <span class="skill">{{$skill->skill}} <i class="val">{{$skill->proficient}}%</i></span>
                 <div class="progress-bar-wrap rounded">
-                  <div class="progress-bar rounded" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar rounded" role="progressbar" aria-valuenow="{{$skill->proficient}}" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
-              </div>
+            </div>
 
-              <div class="progress">
-                <span class="skill">MySQL <i class="val">75%</i></span>
-                <div class="progress-bar-wrap rounded">
-                  <div class="progress-bar rounded" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">JavaScript <i class="val">60%</i></span>
-                <div class="progress-bar-wrap rounded">
-                  <div class="progress-bar rounded" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">Canva <i class="val">85%</i></span>
-                <div class="progress-bar-wrap rounded">
-                  <div class="progress-bar rounded" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">Trello <i class="val">80%</i></span>
-                <div class="progress-bar-wrap rounded">
-                  <div class="progress-bar rounded" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">Git <i class="val">80%</i></span>
-                <div class="progress-bar-wrap rounded">
-                  <div class="progress-bar rounded" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
+            @endforeach
             </div>
 
             <div class="col-lg-6">
+            @foreach ($column2skills as $skill)
 
-              <div class="progress">
-                <span class="skill">PHP <i class="val">85%</i></span>
-                <div class="progress-bar-wrap rounded">
-                  <div class="progress-bar rounded" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress">
+                    <span class="skill">{{$skill->skill}} <i class="val">{{$skill->proficient}}%</i></span>
+                    <div class="progress-bar-wrap rounded">
+                        <div class="progress-bar rounded" role="progressbar" aria-valuenow="{{$skill->proficient}}" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
                 </div>
-              </div>
 
-              <div class="progress">
-                <span class="skill">WordPress/CMS <i class="val">80%</i></span>
-                <div class="progress-bar-wrap rounded">
-                  <div class="progress-bar rounded" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">Azure Cloud <i class="val">60%</i></span>
-                <div class="progress-bar-wrap rounded">
-                  <div class="progress-bar rounded" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">Audacity <i class="val">75%</i></span>
-                <div class="progress-bar-wrap rounded">
-                  <div class="progress-bar rounded" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">Computer Network <i class="val">75%</i></span>
-                <div class="progress-bar-wrap rounded">
-                  <div class="progress-bar rounded" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">Ms. Office <i class="val">90%</i></span>
-                <div class="progress-bar-wrap rounded">
-                  <div class="progress-bar rounded" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
+            @endforeach
             </div>
 
           </div>

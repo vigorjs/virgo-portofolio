@@ -13,7 +13,7 @@
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: [license-url] -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Made with <a href="https://bootstrapmade.com/">BootstrapMade</a> & Laravel
       </div>
     </div>
   </footer><!-- End Footer -->

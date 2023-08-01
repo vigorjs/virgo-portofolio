@@ -6,9 +6,7 @@
             {{ __('Edit Section') }}
             </a>
         </h2>
-            <x-nav-link :href="route('admin.edit-section.aboutme')" :active="request()->routeIs('admin.edit-section.aboutme')">
-                {{ __('About Me') }}
-            </x-nav-link>
+            @include('components.navedit')
         </div>
     </x-slot>
 

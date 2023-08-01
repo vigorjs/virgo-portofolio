@@ -41,9 +41,7 @@
                   <div><strong><em>PT MariBelajar Indonesia Cerdas by Microsoft - Desa Ubung Kaja, Kecamatan Denpasar utara, Kota Denpasar</em></strong></div>
                   <small>Independent study program held by the Kampus Merdeka, Mari belajar, and Microsoft</small>
                   <ul class="mt-3">
-                      <li>Responsible for everything related to technology in the company</li>
-                      <li>Installation of computer devices and networks</li>
-                      <li>System development and Data Entry</li>
+                      <li>Learn about Cloud Fundamentals track of Microsoft Azure</li>
                   </ul>
                 </div>
                 <div class="resume-item">
