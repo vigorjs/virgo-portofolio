@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
             add_to_Skills_tables::class,
             add_to_Portofolios_tables::class,
             add_to_Section_Profile_tables::class,
+            add_to_Users_tables::class,
         ]);
         // \App\Models\User::factory(10)->create();
 
