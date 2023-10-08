@@ -18,8 +18,8 @@ class add_to_Section_Profile_tables extends Seeder
             'phone' => '+62 822-4301-9049',
             'email' => 'virgofajar123@gmail.com',
             'address' => 'Jl. Paving RT 02/RW 05, Mulyoharjo, Jepara 59431, Jawa Tengah',
-            'image' => 'image.jpg',
-            'description' => 'As an undergraduate Informatic Engineering student at Universitas Dian Nuswantoro, I have around 6 months of industry experience. I love to work and have proficiency in PHP and Data Analytics, but I am also open to exploring other technologies as well. In the industry, I have always believed that I need to do what I love. I enjoy solving problems, creating great things, and making meaningful contributions.',
+            'image' => '',
+            'description' => 'As an undergraduate Informatic Engineering student at Universitas Dian Nuswantoro, I have around 1 years of industry experience. I love to work and have proficiency in PHP also the framework such as Laravel, but I am also open to exploring other technologies as well. In the industry, I have always believed that I need to do what I love. I enjoy solving problems, creating great things, and making meaningful contributions.',
         ]);
     }
 }

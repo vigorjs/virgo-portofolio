@@ -10,11 +10,12 @@ class Social extends Model
     use HasFactory;
 
     protected $fillable = [
-       'profile_id',
-       'linkedin',
-       'github',
-       'twitter',
-       'instagram',
-       'gmail'
+        'profile_id',
+        'linkedin',
+        'github',
+        'twitter',
+        'instagram',
+        'gmail',
+        'whatsapp'
     ];
 }

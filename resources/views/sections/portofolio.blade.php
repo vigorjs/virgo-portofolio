@@ -2,24 +2,24 @@
     <section id="portfolio" class="portfolio section-bg">
         <div class="container" data-aos="fade-up">
 
-          <div class="section-title">
-            <h2>Portfolio</h2>
-          </div>
-
-          <div class="row">
-            <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-              <ul id="portfolio-flters">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-profesional">Profesional</li>
-                <li data-filter=".filter-personal">Personal</li>
-                {{-- <li data-filter=".filter-web">Dll</li> --}}
-              </ul>
+            <div class="section-title">
+                <h2>Portfolio</h2>
             </div>
-          </div>
 
-          <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                    <ul id="portfolio-flters">
+                        <li data-filter="*" class="filter-active">All</li>
+                        <li data-filter=".filter-profesional">Profesional</li>
+                        <li data-filter=".filter-personal">Personal</li>
+                        {{-- <li data-filter=".filter-web">Dll</li> --}}
+                    </ul>
+                </div>
+            </div>
 
-            {{-- card filter-profesional
+            <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+                {{-- card filter-profesional
             <div class="col-lg-4 col-md-6 portfolio-item filter-profesional">
               <div class="portfolio-wrap">
                 <img src="{{asset('template/assets/img/portfolio/portfolio-1.jpg')}}" class="img-fluid" alt="">
@@ -34,7 +34,7 @@
               </div>
             </div> --}}
 
-            {{-- card filter-personal
+                {{-- card filter-personal
             <div class="col-lg-4 col-md-6 portfolio-item filter-personal">
               <div class="portfolio-wrap">
                 <img src="{{asset('template/assets/img/portfolio/portfolio-4.jpg')}}" class="img-fluid" alt="">
@@ -48,22 +48,24 @@
                 </div>
               </div>
             </div> --}}
-            @foreach ($portofolio as $portofolio)
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-{{$portofolio->category}}">
-              <div class="portfolio-wrap">
-                <img src="{{asset('storage/assets/' . $portofolio->image)}}" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>{{$portofolio->title}}</h4>
-                  <div class="portfolio-links">
-                    <a href="{{asset('storage/assets/' . $portofolio->detail)}}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="{{$portofolio->description}}"><i class="bx bx-detail"></i></a>
-                    <a href="{{$portofolio->url}}" target="_blank" ><i class="bx bx-link"></i></a></div>
-                </div>
-              </div>
+                @foreach ($portofolio as $portofolio)
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-{{ $portofolio->category }}">
+                        <div class="portfolio-wrap">
+                            <img src="{{ $portofolio->image ? asset('storage/assets/' . $portofolio->image) : asset('template/assets/img/portfolio/portfolio-1.jpg') }}"
+                                class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>{{ $portofolio->title }}</h4>
+                                <div class="portfolio-links">
+                                    <a href="{{ $portofolio->detail ? asset('storage/assets/' . $portofolio->detail) : asset('template/assets/img/portfolio/portfolio-2.jpg') }}"
+                                        data-gallery="portfolioGallery" class="portfolio-lightbox"
+                                        title="{{ $portofolio->description }}"><i class="bx bx-detail"></i></a>
+                                    <a href="{{ $portofolio->url }}" target="_blank"><i class="bx bx-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
             </div>
 
-            @endforeach
-          </div>
-
         </div>
-      </section><!-- End Portfolio Section -->
+    </section><!-- End Portfolio Section -->

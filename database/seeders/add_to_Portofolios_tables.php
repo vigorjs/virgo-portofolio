@@ -16,9 +16,9 @@ class add_to_Portofolios_tables extends Seeder
         Portofolio::insert([
             'title' => 'Pegadaian Sistem Inventaris',
             'description' => 'Web Inventory gudang qrcode menggunakan Bootstrap dan php native',
-            'image' => 'image.jpg',
+            'image' => '',
             'category' => 'profesional',
-            'detail' => 'detail.jpg',
+            'detail' => '',
             'url' => 'https://github.com/vigorjs/PESIRIS',
         ]);
     }

@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('twitter')->nullable();
             $table->string('instagram')->nullable();
             $table->string('gmail')->nullable();
+            $table->string('whatsapp')->nullable();
 
             $table->softDeletes();
             $table->timestamps();

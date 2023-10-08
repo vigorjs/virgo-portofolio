@@ -20,6 +20,7 @@ class add_to_Socials_tables extends Seeder
             'twitter' => 'https://twitter.com/Goddamnneddd',
             'instagram' => 'https://www.instagram.com/vigorjs',
             'gmail' => 'mailto:virgofajar123@gmail.com',
+            'whatsapp' => 'https://api.whatsapp.com/send?phone=6282243019049',
         ]);
     }
 }
