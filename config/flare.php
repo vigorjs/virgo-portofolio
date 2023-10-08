@@ -38,6 +38,7 @@ return [
 
     'flare_middleware' => [
         RemoveRequestIp::class,
+        AddGitInformation::class,
         AddNotifierName::class,
         AddEnvironmentInformation::class,
         AddExceptionInformation::class,
@@ -47,7 +48,7 @@ return [
         ],
         AddQueries::class => [
             'maximum_number_of_collected_queries' => 200,
-            'report_query_bindings' => true,
+            'report_query_bindings' => false,
         ],
         AddJobs::class => [
             'max_chained_job_reporting_depth' => 5,
@@ -75,5 +76,5 @@ return [
     |
     */
 
-    'send_logs_as_events' => true,
+    'send_logs_as_events' => false,
 ];
